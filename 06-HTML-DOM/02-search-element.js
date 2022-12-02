@@ -33,15 +33,9 @@
 </ul> */
 
 // js
-
-const listWithId = document.querySelector('#menu');
-listWithId.style.textTransform = 'uppercase';
-listWithId.style.fontSize = '24px';
-console.log(listWithId);
-
-const menuItemsByTagName = document.querySelectorAll("li");
-console.log(menuItemsByTagName);
-
-const firstMenuItem = document.querySelector(".menu-item");
-firstMenuItem.style.color = 'tomato';
-console.log(firstMenuItem);
+document.addEventListener(
+  "scroll",
+  _.throttle(() => {
+    console.log("Scroll handler call every 300ms");
+  }, 300)
+);

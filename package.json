@@ -1,0 +1,24 @@
+{
+  "name": "jstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "validator": "^13.7.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalexblade/jstart.git"
+  },
+  "keywords": [],
+  "author": "Alex Blade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aalexblade/jstart/issues"
+  },
+  "homepage": "https://github.com/aalexblade/jstart#readme"
+}
