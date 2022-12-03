@@ -40,26 +40,53 @@
 // Change value of isSuccess variable to call resolve or reject
 
 
-const makeGreeting = guestName => {
-  if (guestName === "" || guestName === undefined) {
-    return {
-      success: false,
-      message: "Guest name must not be empty",
-    };
+// const makeGreeting = guestName => {
+//   if (guestName === "" || guestName === undefined) {
+//     return {
+//       success: false,
+//       message: "Guest name must not be empty",
+//     };
+//   }
+
+//   return {
+//     success: true,
+//     message: `Welcome ${guestName}`,
+//   };
+// };
+
+// const result = makeGreeting();
+
+// if (result.success) {
+//   console.log(result.message);
+// } else {
+//   console.error(result.message);
+// }
+
+
+
+// fetch("https://jsonplaceholder.typicode.com/users");
+// .then(reponse =>{
+
+// })
+// .then(data=>{
+
+// })
+// .catch(error =>{
+
+// })
+
+
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response =>{
+  if (!response.ok){
+    thow new Error(response.status);
   }
+  return response.json();
+})
+then.(date=>{
 
-  return {
-    success: true,
-    message: `Welcome ${guestName}`,
-  };
-};
-
-const result = makeGreeting();
-
-if (result.success) {
-  console.log(result.message);
-} else {
-  console.error(result.message);
-}
-
-console.lgo
+})
+.catch(error =>{
+  
+})
